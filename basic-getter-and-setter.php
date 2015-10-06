@@ -4,14 +4,10 @@
     */
     class Student {
         // Atribute of class
-        public $name = 'studnet name';
-        public $age = 10;
+        private $name = 'studnet name';
+        private $age = 10;
 
-        function __construct($name = null, $age = null) {
-            $this->name = $name;
-            $this->age = $age;
-        }
-
+        // Only use get set method
         public function getAge()
         {
             return $this->age * 365;
@@ -24,11 +20,22 @@
             }
             return $this->age = $age;
         }
+
+        public function getName()
+        {
+            return $this->name;
+        }
+
+        public function setName($name)
+        {
+            return $this->name = $name;
+        }
     }
 
 
+$st = new Student('Join',30);
+var_dump($st->getName(), $st->getAge());
 
-// $st = new Student('Join',32);
-// var_dump($st->name, $st->age, $st->getAge());
-$st = new Student('Join');
-var_dump($st->name, $st->age, $st->setAge(12));
+$st->setName('New Join');
+$st->setAge(30);
+var_dump($st->getName(), $st->getAge());
