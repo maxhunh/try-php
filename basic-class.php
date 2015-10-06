@@ -40,4 +40,4 @@ var_dump($st_mod_2nd->name, $st_mod_2nd->age, $st_mod_2nd->good);
 $st_mod_2nd->setGood();
 var_dump($st_mod_2nd->name, $st_mod_2nd->age, $st_mod_2nd->good);
 
-var_dump(Student.getInfo());
+var_dump(Student.getInfo()); # error
