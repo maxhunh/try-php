@@ -1,19 +1,17 @@
 <?php
-    // Use require
-    require 'src/Person.php';
-    require 'src/Business.php';
-    require 'src/Staff.php';
+
+    require 'vendor/autoload.php';
 
     /**
      * Test
      */
 
     // Case 1 : person apply to staff of business
-    $max = new Person('Max Join');
-    $mulodo = new Business($staff_2nd = (new Staff([$max])));
+    $max = new TryModule\Person('Max Join');
+    $mulodo = new TryModule\Business($staff_2nd = (new TryModule\Staff([$max])));
 
     // Case 2 : business hire a person
-    $join = new Person('Join Black');
+    $join = new TryModule\Person('Join Black');
     $mulodo->hire($join);
 
     // Get member of mulodo company
