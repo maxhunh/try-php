@@ -1,17 +1,19 @@
 <?php
 
-    require 'vendor/autoload.php';
-
     /**
      * Test
      */
 
+    use TryModule\Person;
+    use TryModule\Business;
+    use TryModule\Staff;
+
     // Case 1 : person apply to staff of business
-    $max = new TryModule\Person('Max Join');
-    $mulodo = new TryModule\Business($staff_2nd = (new TryModule\Staff([$max])));
+    $max = new Person('Max Join');
+    $mulodo = new Business($staff_2nd = (new Staff([$max])));
 
     // Case 2 : business hire a person
-    $join = new TryModule\Person('Join Black');
+    $join = new Person('Join Black');
     $mulodo->hire($join);
 
     // Get member of mulodo company
