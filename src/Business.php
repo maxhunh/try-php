@@ -1,4 +1,8 @@
 <?php
+
+
+    namespace TryModule;
+
     /**
     * Class Business
     */

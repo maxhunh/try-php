@@ -1,4 +1,7 @@
 <?php
+
+    namespace TryModule;
+
     /**
     * Class Staff
     */
