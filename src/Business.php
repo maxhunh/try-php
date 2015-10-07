@@ -14,7 +14,7 @@
             $this->staff = $staff;
         }
 
-        public function hire(Person $person)
+        public function hire(User\Person $person)
         {
             # Add person to staff collection
             $this->staff->add($person);

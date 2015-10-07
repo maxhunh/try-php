@@ -1,6 +1,6 @@
 <?php
 
-    namespace TryModule;
+    namespace TryModule\User;
 
     /**
     * Class Person

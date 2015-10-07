@@ -4,7 +4,7 @@
      * Test
      */
 
-    use TryModule\Person;
+    use TryModule\User\Person;
     use TryModule\Business;
     use TryModule\Staff;
 

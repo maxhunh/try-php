@@ -13,7 +13,7 @@
             $this->members = $members;
         }
 
-        public function add(Person $person)
+        public function add(User\Person $person)
         {
             $this->members[] = $person;
         }
