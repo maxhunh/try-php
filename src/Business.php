@@ -1,7 +1,8 @@
 <?php
 
-
     namespace TryModule;
+
+    use TryModule\User\Person;
 
     /**
     * Class Business
@@ -14,7 +15,7 @@
             $this->staff = $staff;
         }
 
-        public function hire(User\Person $person)
+        public function hire(Person $person)
         {
             # Add person to staff collection
             $this->staff->add($person);

@@ -2,6 +2,8 @@
 
     namespace TryModule;
 
+    use TryModule\User\Person;
+
     /**
     * Class Staff
     */
@@ -13,7 +15,7 @@
             $this->members = $members;
         }
 
-        public function add(User\Person $person)
+        public function add(Person $person)
         {
             $this->members[] = $person;
         }
